@@ -1,0 +1,21 @@
+/* HTML */
+
+/* navegaçao */
+
+.nave{
+    margin: 0 26px;
+}
+
+.listanave{
+    margin-left: 60%;
+}
+
+
+/* footer */
+
+.rodape{
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(9, 143, 143);
+    padding: 33px;
+}
