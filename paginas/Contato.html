@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt -br">
+
+<head> <!-- Tag do cabeçalho -->
+    <meta charset="utf-8"/> <!-- <meta charset="UTF-8"/> Tag para resolver problema com acentuação -->
+    <link rel="stylesheet" href="../estilo/Contato.css"/>
+    <title>Contato</title> <!-- Tag para inserir  titulo pra Página -->
+
+</head> <!-- Fechamento da Tag -->
+
+<body>  <!-- Tag do Corpo da Pagina -->
+<div id="interface"> <!-- <div></div> -> Tag semântica para criar uma Divisão (id significa identificação) -->
+
+<header id="cabecalho"> <!-- <header></header> -> Tag para delimitar o cabeçalho -->
+    <hgroup> <!-- <hgroup> -> Tag para agrupar os Títulos semelhantes -->
+        <h1>Contato</h1> <!-- Tag para tamanho de um titulo pra Página -->
+        <h2>Deixe sua Mensagem</h2> <!-- Tag para criar Título secundário -->
+    </hgroup> <!-- Fechamento da Tag -->
+
+</header> <!-- Fechamento de Tag -->
+
+<fieldset id="usuario"><legend>Identificação do Usuário </legend>
+        <p><label for="cNome">Nome: <input type="text" name="tNome" id="cNome"size="20" maxlength="30" placeholder="Nome Completo"/></p>
+        <p><label for="cSenha">Senha:<input type="password" name="tSenha" id="cSenha"size="8" maxlength="8" placeholder="8 dígitos"/></p>
+        <p><label for="cMail">E-mail:<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
+        </fieldset>
+
+<fieldset id="endereco"> <legend> Endereço do Usuário </legend>
+        <p>Logradouro: <input type="text" name="tRua" id="cRua" size"13" maxlength="80" placeholder="Rua, Av,Trav"/> </p>
+        <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="9999"/></p>
+        Estado: <select name="tEst" id="cEst">
+
+         <optgroup label="Região Sudeste">
+            <option value="RJ"> Rio de Janeiro</option>
+            <option value="SP"selected> São Paulo</option>
+            <option value="MG">Minas Gerais</option>
+        </optgroup>
+
+        <optgroup label="Região Sul">
+            <option value="PR"> Paraná</option>
+            <option value="SC"> Santa Catarina</option>
+            <option value="RS"> Rio Grande do Sul </option>
+        </optgroup>
+
+                </select>
+
+<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
+        <p><label for="cURG">Grau de Urgência:</label>
+         Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/> Máx </p>
+        <p><label for="cURG">Mensagem:</label>
+        <textarea name="tMsg" id="cMsg" cols="55" rows="5" placeholder="Deixe sua mensagem"></textarea>
+</fieldset>
+<input type="image" name="tEnviar" src="../imagens/botao-enviar.png"/>"
+
+
+</div>
+</body> <!-- Fechamento da Tag -->
+</html>

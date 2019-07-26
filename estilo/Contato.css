@@ -1,0 +1,38 @@
+@charset "UTF-8";
+
+form {
+	width: 500px;
+	margin: auto;
+
+}
+
+input, textarea {
+	font-family: sans-serif;
+	font-weight: normal;
+	font-size: 13pt;
+}
+input:hover{
+	background-color: #dddddd;
+}
+
+legend{
+	color: black;
+	font-weight: bold;
+	font-size: 13pt;
+	font-family: sans-serif;
+}
+fieldset{
+	border-color: black;
+	margin: 20px;
+}
+
+fieldset#usuario{
+	background: url("../imagens/icone-contato.png") no-repeat 95% 95%;
+
+}
+
+
+fieldset#mensagem{
+	background: url("../imagens/icone-mensagem.png") no-repeat 95% 95%;
+
+}
