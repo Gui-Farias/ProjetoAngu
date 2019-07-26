@@ -1,5 +1,15 @@
 @charset "UTF-8";
+/* HTML */
 
+/* navegaçao */
+
+.nave{
+    margin: 0 26px;
+}
+
+.listanave{
+    margin-left: 60%;
+}
 form {
 	width: 500px;
 	margin: auto;
@@ -35,4 +45,10 @@ fieldset#usuario{
 fieldset#mensagem{
 	background: url("../imagens/icone-mensagem.png") no-repeat 95% 95%;
 
+}
+.rodape{
+    text-align: center;
+    font-size: 14px;
+    background-color: rgb(9, 143, 143);
+    padding: 33px;
 }

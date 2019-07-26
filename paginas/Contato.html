@@ -3,56 +3,68 @@
 
 <head> <!-- Tag do cabeçalho -->
     <meta charset="utf-8"/> <!-- <meta charset="UTF-8"/> Tag para resolver problema com acentuação -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../estilo/Contato.css"/>
+    <link rel="stylesheet" href="../estilo/style.css"/>
     <title>Contato</title> <!-- Tag para inserir  titulo pra Página -->
 
 </head> <!-- Fechamento da Tag -->
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand nave" href="index.html">TrickLife</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
 
-<body>  <!-- Tag do Corpo da Pagina -->
-<div id="interface"> <!-- <div></div> -> Tag semântica para criar uma Divisão (id significa identificação) -->
+        <div class="collapse navbar-collapse listanave" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Videos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Noticias</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <form>
+  <div class="form-group">
+    <label for="exampleFormControlInput1">Email address</label>
+    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect1">Digite seu nome</label>
+    <input type="nome" class="form-control" id="exampleFormControlInput2" placeholder="name">
 
-<header id="cabecalho"> <!-- <header></header> -> Tag para delimitar o cabeçalho -->
-    <hgroup> <!-- <hgroup> -> Tag para agrupar os Títulos semelhantes -->
-        <h1>Contato</h1> <!-- Tag para tamanho de um titulo pra Página -->
-        <h2>Deixe sua Mensagem</h2> <!-- Tag para criar Título secundário -->
-    </hgroup> <!-- Fechamento da Tag -->
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlSelect2">Digite o nome da Trick</label>
+    <input type="trick" class="form-control" id="exampleFormControlInput3" placeholder="Trick">
+  </div>
+  <div class="form-group">
+    <label for="exampleFormControlTextarea1">Description</label>
+    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  </div>
+  <footer class="container-fluid rodape">
+      <p>COPYRIGHT © 2019. TODOS OS DIREITOS RESERVADOS.</p>
 
-</header> <!-- Fechamento de Tag -->
-
-<fieldset id="usuario"><legend>Identificação do Usuário </legend>
-        <p><label for="cNome">Nome: <input type="text" name="tNome" id="cNome"size="20" maxlength="30" placeholder="Nome Completo"/></p>
-        <p><label for="cSenha">Senha:<input type="password" name="tSenha" id="cSenha"size="8" maxlength="8" placeholder="8 dígitos"/></p>
-        <p><label for="cMail">E-mail:<input type="email" name="tMail" id="cMail" size="20" maxlength="40"/></p>
-        </fieldset>
-
-<fieldset id="endereco"> <legend> Endereço do Usuário </legend>
-        <p>Logradouro: <input type="text" name="tRua" id="cRua" size"13" maxlength="80" placeholder="Rua, Av,Trav"/> </p>
-        <p>Número: <input type="number" name="tNum" id="cNum" min="0" max="9999"/></p>
-        Estado: <select name="tEst" id="cEst">
-
-         <optgroup label="Região Sudeste">
-            <option value="RJ"> Rio de Janeiro</option>
-            <option value="SP"selected> São Paulo</option>
-            <option value="MG">Minas Gerais</option>
-        </optgroup>
-
-        <optgroup label="Região Sul">
-            <option value="PR"> Paraná</option>
-            <option value="SC"> Santa Catarina</option>
-            <option value="RS"> Rio Grande do Sul </option>
-        </optgroup>
-
-                </select>
-
-<fieldset id="mensagem"><legend>Mensagem do Usuário</legend>
-        <p><label for="cURG">Grau de Urgência:</label>
-         Mín<input type="range" name="tUrg" id="cUrg" min="0" max="10" step="2"/> Máx </p>
-        <p><label for="cURG">Mensagem:</label>
-        <textarea name="tMsg" id="cMsg" cols="55" rows="5" placeholder="Deixe sua mensagem"></textarea>
-</fieldset>
-<input type="image" name="tEnviar" src="../imagens/botao-enviar.png"/>"
-
-
-</div>
+  </footer>
 </body> <!-- Fechamento da Tag -->
 </html>
