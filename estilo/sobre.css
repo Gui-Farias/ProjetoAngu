@@ -1,0 +1,19 @@
+
+
+/* sobre */
+
+.sobre{
+    margin-top: 3%;
+    padding-bottom: 3%;
+    text-align: center;
+}
+
+
+/* pessoal */
+
+.pessoal{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    text-align: center;
+    padding-bottom: 3%;
+}
